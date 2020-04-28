@@ -1,0 +1,152 @@
+.FirstContainer{
+    position: absolute;
+    top :0;
+    bottom :0;
+    width: 100%;
+    height: 100%;
+}
+.FirstImageContainer {
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.FirstImage {
+    width: 100%;
+    height: 100%;
+}
+.Nav {
+    padding-right: 5%;
+    height: 20%;
+    width: 60%;
+    align-items: space-around;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height: 10%;
+    top: 3%;
+    right: 0;
+}
+.HomePicture {
+    position: relative;
+    top: -10%;
+    flex: 1;
+}
+.NavButtons {
+    height: 30%;
+    flex: 1;
+    font-family: poppins;
+    padding-bottom: 0.1%;
+
+}
+.LoginButtonContainer {
+    flex: 1;
+    
+}
+.LoginButton {
+
+    height: 40%;
+    width: 90%;
+    border-radius: 3px;
+    font-family: poppins;
+    font-size: 120%;
+    color: white;
+    text-align: center;
+    /* padding-top: 3%; */
+    background-color: #6990D5;
+    cursor: pointer;
+}
+.NavItemConatainer {
+    cursor: pointer;
+}
+.bottomBar1 {
+    position: absolute;
+    height: 35%;
+    width: 5%;
+    background-color: none;
+    border-bottom: 2px solid #6990D5;
+    transition: width 0.4s;
+}
+.bottomBar1:hover {
+    width: 7%;
+}
+.bottomBar2 {
+    position: absolute;
+    height: 35%;
+    width: 5%;
+    background-color: none;
+    border-bottom: 2px solid #6990D5;
+    transition: width 0.4s;
+}
+.bottomBar2:hover {
+    width: 7%;
+}
+.bottomBar3 {
+    position: absolute;
+    height: 35%;
+    width: 4%;
+    background-color: none;
+    border-bottom: 2px solid #6990D5;
+    transition: width 0.4s;
+}
+.bottomBar3:hover {
+    width: 6%;
+}
+
+.bottomBar4 {
+    position: absolute;
+    height: 35%;
+    width: 3%;
+    background-color: none;
+    border-bottom: 2px solid #6990D5;
+    transition: width 0.4s;
+}
+.bottomBar4:hover {
+    width: 5%;
+}
+.bottomBar5 {
+    position: absolute;
+    height: 35%;
+    width: 5%;
+    background-color: none;
+    border-bottom: 2px solid #6990D5;
+    transition: width 0.4s;
+}
+.bottomBar5:hover {
+    width: 8%;
+}
+.TextContainer{
+    position: absolute;
+    top: 23%;
+    left: 13%;
+    
+}
+.Text1{
+    font-family: poppins-bold;
+    font-size: 300%;
+}
+.Text2{
+    font-family: poppins-semi-bold;
+    font-size: 185%;
+}
+.Text3{
+    font-family: poppins;
+    font-size: 150%;
+}
+.DemoButton{
+    position: absolute;
+    top: 73%;
+    left: 10%;
+    background-color: #6F9DEE;
+    padding: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.DemoText {
+    font-family:poppins-semi-bold;
+    font-size: 120%;
+}
