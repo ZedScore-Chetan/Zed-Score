@@ -10,6 +10,18 @@
   font-family: 'poppins-semi-bold';
   src: local('poppins-semi-bold'), url('./assets/Fonts/Poppins-SemiBold.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'poppins-medium';
+  src: local('poppins-medium'), url('./assets/Fonts/Poppins-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'poppins-thin';
+  src: local('poppins-thin'), url('./assets/Fonts/Poppins-Thin.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'poppins-regular';
+  src: local('poppins-regular'), url('./assets/Fonts/Poppins-Regular.ttf') format('truetype');
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
