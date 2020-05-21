@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | ZED Score</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="image-container"></div>
+        <div id="login">
+            <div id="login-container">
+                <div id="external-login">
+                    <img class="external-login-button" src="fb-signin.png"></img>
+                    <img class="external-login-button" src="google-signin.png"></img>
+                </div>
+                <div id="horizontal-line-block">
+                    <div class="line">
+                        <div id="line-middle-text">or</div>
+                    </div>
+                </div>
+                <div id="native-login">
+                    <div class="mail-field">
+                        <img class="login-icon" src="lock.svg">
+                        <input type="text" placeholder="Email" class="login-data mail" spellcheck="false">
+                    </div>
+                    <div class="mail-field">
+                        <img class="login-icon" src="lock.svg">
+                        <input type="text" placeholder="Password" class="login-data password" spellcheck="false">
+                    </div>
+                    <div id="forgot-link">
+                        Forgot Password?&nbsp;<strong><a href="">Reset</a></strong>
+                    </div>
+                    <div id="remember">
+
+                    </div>
+                    <div id="login-button" onclick="login()">
+                        Login
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
