@@ -19,6 +19,10 @@
   src: local('poppins-thin'), url('./assets/Fonts/Poppins-Thin.ttf') format('truetype');
 }
 @font-face {
+  font-family: 'inde';
+  src: local('inde'), url('./assets/Fonts/IndieFlower-Regular.ttf') format('truetype');
+}
+@font-face {
   font-family: 'poppins-regular';
   src: local('poppins-regular'), url('./assets/Fonts/Poppins-Regular.ttf') format('truetype');
 }

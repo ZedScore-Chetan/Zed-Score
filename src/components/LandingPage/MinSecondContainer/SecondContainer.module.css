@@ -1,4 +1,4 @@
-body{
+/* body{
   overflow-x: hidden;
 }
 .SecondContainer {
@@ -31,7 +31,6 @@ body{
   font-size: 300%;
 }
 .SecondText2 {
-  /* position: absolute; */
   top: 100%;
   font-family: poppins-medium;
   font-size: 140%;
@@ -119,8 +118,8 @@ body{
   width: 28%;
   background-color: #6f9dee;
   border-radius: 20px;
-}
-.ThirdTextContainer {
+} */
+/* .ThirdTextContainer {
   position: absolute;
   left: 10%;
   top: 155%;
@@ -153,8 +152,8 @@ body{
   width: 100%;
   align-items: center;
   justify-content: space-evenly;
-}
-.BottomPinkCurveContainer{
+} */
+/* .BottomPinkCurveContainer{
   position: relative;
   height: 100%;
   width: 100%;
@@ -202,8 +201,8 @@ body{
   background-color: white;
   border-radius: 20px;
   box-shadow: -1px 26px 29px #00000063;
-}
-.BottomBlueCurveContainer{
+} */
+/* .BottomBlueCurveContainer{
   position: relative;
   width: 102%;
   top: 55%;
@@ -284,28 +283,19 @@ body{
   position: relative;
   height: 100%;
   width: auto;
-}
-.Econtainer2{
-  position: relative;
-  height: 140%;
-  width: 30%;
-  top: -385%;
-  left: 35%;
-  z-index: 10;
-}
-.E2{
-  position: relative;
-  height: 100%;
-  width: auto;
-}
+} */
+
 .BottomBlackcurveContainer{
-  position: relative;
+  position: absolute;
+  top: 610%;
   left: -1%;
   width: 102%;
   height: 80%;
   overflow: hidden;
 }
 .BottomBlackcurve{
+  position: absolute;
   width: 100%;
   height: auto;
+  /* top: -2000%; */
 }
