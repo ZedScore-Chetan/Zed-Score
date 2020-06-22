@@ -1,0 +1,37 @@
+.gridContainer {
+    height:85vh;
+    width:60vw;
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 65vh;
+    gap: 30px 0px;
+    grid-template-areas: "details" "controls";
+    margin:auto;
+}  
+.details{
+    grid-area: details;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.controls { 
+    grid-area: controls;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.controls>img{
+    display:block;
+    height:40vh;
+    margin-bottom: 5vh;
+    cursor:pointer;
+}
+.detailsActive {
+    background-color: #5EDFA7;
+}
+.detailsInactive{
+    background-color: #F77A7A;
+}

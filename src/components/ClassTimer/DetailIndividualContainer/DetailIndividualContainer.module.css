@@ -1,0 +1,37 @@
+.gridContainer {
+    width:30%;
+    height:100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "icon heading" "icon content";
+}
+
+.icon {
+    grid-area: icon;
+    display: flex;
+    /* background-color: blueviolet; */
+    justify-content: center;
+    align-items: center;
+}
+
+.icon>img{
+    height:50%;
+}
+
+.heading {
+    grid-area: heading;
+    display: flex;
+    /* background-color: brown; */
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-weight: 900;
+}
+
+.content {
+    grid-area: content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* background-color: cadetblue; */
+}
