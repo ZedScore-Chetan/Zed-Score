@@ -1,7 +1,8 @@
 import React from 'react';
 import classes from './FirstContainer.module.css';
-import FirstImage from '../../assets/FirstImg.png';
-import Home from '../../assets/home.png';
+
+import FirstImage from '../../../assets/FirstImg.png';
+
 
 
 const FirstContainer = props => {
@@ -10,7 +11,7 @@ const FirstContainer = props => {
             <div className={classes.FirstImageContainer}>
                 <img className={classes.FirstImage} src={FirstImage} />
             </div>
-            <nav className={classes.Nav}>
+            {/* <nav className={classes.Nav}>
                 <div className={classes.HomePictureContainer}>
                     <img src={Home} className={classes.HomePicture} />
                 </div>
@@ -23,7 +24,7 @@ const FirstContainer = props => {
                 <div className={classes.LoginButtonContainer}>
                     <div className={classes.LoginButton}>Login</div>
                 </div>
-            </nav>
+            </nav> */}
             <div className={classes.FirstTextContainer}>
                 <div className={classes.FirstText1}>Reach for your dreams</div>
                 <div className={classes.FirstText2}>Get the Best Experience</div>

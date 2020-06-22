@@ -1,3 +1,7 @@
+/* .body{
+    padding :0;
+    margin: 0;
+} */
 .FirstContainer{
     position: absolute;
     top :0;
@@ -16,7 +20,9 @@
     width: 100%;
     height: 100%;
 }
-.Nav {
+/* .Nav {
+    position: absolute;
+    top: 0;
     padding-right: 5%;
     height: 20%;
     width: 60%;
@@ -28,6 +34,7 @@
     height: 10%;
     top: 3%;
     right: 0;
+    background-color:white;
 }
 .HomePictureContainer {
     position: relative;
@@ -50,14 +57,13 @@
 }
 .LoginButton {
 
-    height: 40%;
+    height: 40%;x
     width: 90%;
     border-radius: 3px;
     font-family: poppins;
     font-size: 120%;
     color: white;
     text-align: center;
-    /* padding-top: 3%; */
     background-color: #6990D5;
     cursor: pointer;
 }
@@ -119,7 +125,7 @@
 }
 .bottomBar5:hover {
     width: 8%;
-}
+} */
 .FirstTextContainer{
     position: absolute;
     top: 23%;

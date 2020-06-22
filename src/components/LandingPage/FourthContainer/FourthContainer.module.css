@@ -1,0 +1,69 @@
+.FourthContainer{
+    position: absolute;
+    top: 360%;
+    width: 100%;
+    height: 200%;
+    overflow: hidden;
+}
+
+.BottomPinkCurveContainer{
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  .BottomPinkContainer{
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+  .FourthTextContainer{
+    position: relative;
+    left: 10%;
+    top: -80%;
+  }
+  .BuzzText{
+    position: relative;
+    font-family: poppins-bold;
+    color: white;
+    font-size: 300%;
+    padding-top: 3%;
+    width: 30%;
+  }
+  .BottomBar4{
+    position: relative;
+    top: -90%;
+    height: 5%;
+    width: 28%;
+    background-color: #6f9dee;
+    border-radius: 20px;
+  }
+  .Imgscontainer{
+    position: relative;
+    top:-70%;
+    width: 80%;
+    left: 10%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .WhiteCard{
+    position: relative;
+    height: 100%;
+    width: 28%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -1px 26px 29px #00000063;
+  }
+  .Econtainer{
+    position: relative;
+    height: 80%;
+    top: -103%;
+    width: 30%;
+    left: 67%;
+  }
+  .E{
+    position: relative;
+    height: 100%;
+    width: auto;
+  }

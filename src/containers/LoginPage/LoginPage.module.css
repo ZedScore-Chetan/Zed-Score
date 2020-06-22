@@ -1,0 +1,28 @@
+.outerContainer{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+}
+
+.left{
+    height: 100vh;
+    width: 65vw;
+}
+.whiteLine{
+    position: absolute;
+    height: 20vh;
+    width: 65vw;
+    left: 0;
+    top:40vh;
+    background-color:white;
+}
+
+.right{
+    height: 100vh;
+    width: 35vw;
+    background-color:#6F9DEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

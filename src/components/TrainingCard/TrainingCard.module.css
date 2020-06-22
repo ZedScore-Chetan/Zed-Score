@@ -1,0 +1,83 @@
+.Outer{
+    display:flex;
+    height: 55vh;
+    width: 100vw;
+    /* flex-direction:row; */
+    overflow: hidden;
+    align-items:center;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.temp{
+    background-color: red;
+}
+.ContainerLeft{
+    position: relative;
+    /* left: 8%; */
+    box-sizing: border-box;
+    width: 60vw;
+    background: #E6E6E6 0% 0% no-repeat padding-box;
+    border: 2px solid #000000;
+    border-radius: 28px;
+    height: 45vh;
+    overflow: hidden;
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    /* flex: 12; */
+}
+.ContainerRight{
+    position: relative;
+    box-sizing: border-box;
+    width: 60vw;
+    background: #E6E6E6 0% 0% no-repeat padding-box;
+    border: 2px solid #000000;
+    border-radius: 28px;
+    height: 45vh;
+    overflow: hidden;
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+}
+.imgContainer{
+    width: 40%;
+    overflow: hidden;
+}
+.laptopLeft{
+    left: 0;
+    width: 102%;
+    height: auto;
+}
+.TextContainer{
+    box-sizing: border-box;
+    padding: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    width: 60%;
+}
+.Heading{
+    font-family: poppins-medium;
+    font-size: 150%;
+}
+.bottomBar{
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+.text{
+    padding-top: 5%;
+    font-family:poppins;
+    font-size: 80%;
+}
+.fillerContainer {
+    /* background-color: red; */
+    height: 80%;
+    /* flex:1;   */
+}
+.filler{
+    height: 100%;
+}
