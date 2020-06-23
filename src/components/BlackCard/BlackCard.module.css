@@ -1,6 +1,6 @@
 .Container{
-    height: 100%;
-    width: 26%;
+    height: 60vh;
+    width: 26vw;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -10,7 +10,6 @@
     width: 100%;
     background-color:black;
     opacity: 0.6;
-    
 }
 
 /* .ReadMore{

@@ -1,78 +1,60 @@
-.ThirdContainer{
-    position: absolute;
-    top: 265%;
-    width: 100%;
-    height: 200%;
-    z-index: -2;
-    overflow: hidden;
+.ThirdContainer {
+  width: 100vw;
+  z-index: -2;
+  overflow: hidden;
 }
 .ThirdTextContainer {
-    position: relative;
-    left: 10%;
-    top: 0%;
-  }
-  .Text{
-      font-family:poppins-bold;
-      font-size: 300%;
-  }
-  .viewport{
-    position: relative;
-    height: 50%;
-    width: 100%;
-    background-image: url("../../../assets/map.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-  .MainContainer{
-    position: relative;
-    padding-top: 5%;
-    padding-bottom: 10%;
-    z-index: 10;
-    height: 80%;
-    width: 100%;
-    background-position: center top;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  .CardContainerTop{
-    display: flex;
-    position: relative;
-    top: 10%;
-    height: 70%;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
-    padding-bottom: 5%;
-  }
-  .CardContainerBottom{
-    display: flex;
-    position: relative;
-    top: 10%;
-    height: 70%;
-    width: 100%;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-.white{
-  position: relative;
-  padding-top: 8%;
-  padding-bottom: 8%;
-  margin-top: 30%;
-  margin-bottom: 10%;
-  left: 20%;
-  width: 60%;
-  background-color: white;
-  opacity: 0.7;
-  text-align: center;
+  margin-left: 6vw;
 }
-.TextContainer{
-  position: relative;
-  top: -52%;
-  left: 20%;
-  width: 60%;
-  text-align: center;
+.Text {
+  font-size: 6vh;
+  font-family: poppins-bold;
 }
-  .text{
-    font-family: inde;
-    font-size:300%;
-  }
+
+.viewport {
+  background-image: url("../../../assets/map.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.MainContainer {
+  margin-top: 5vh;
+  width: 99vw;
+  height: 90vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.CardContainerTop,
+.CardContainerBottom {
+  width: 90vw;
+  display: flex;
+  width: 100vw;
+  height: 70vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container3 {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TextContainer {
+  background-color: #222831;
+  text-align: center;
+  width: 70vw;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 5vh 0;
+  margin: 30vh 0;
+}
+.text {
+  font-family: inde;
+  font-size: 300%;
+}

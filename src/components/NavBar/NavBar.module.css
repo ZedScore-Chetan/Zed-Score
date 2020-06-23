@@ -1,13 +1,9 @@
 .container {
   top: 0;
   left: 0;
-  /* overflow-x: hidden; */
   width: 100vw;
-  max-width: 100vw;
-  position: fixed;
   height: 10vh;
   background-color: white;
-  z-index: 10;
 }
 .Nav {
   height: 100%;
@@ -18,6 +14,28 @@
   align-items: center;
 }
 
+.toggleContainer{
+  position: absolute;
+  left: 1vw;
+  cursor: pointer;
+  height: 5vh;
+  width: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.toggleBar{
+  width: 100%;
+  height: 15%;
+  background-color: black;
+}
+
+.HomePicture{
+  cursor: pointer;
+}
+
 .NavButtons {
   font-family: poppins-regular;
   cursor: pointer;
@@ -25,7 +43,7 @@
 
 .bottomBar1 {
   position: absolute;
-  height: 3%;
+  height: 0.2vh;
   width: 2%;
   background-color: black;
   transition: width 0.2s;
@@ -35,7 +53,7 @@
 }
 .bottomBar2 {
   position: absolute;
-  height: 3%;
+  height: 0.2vh;
   width: 2.5%;
   background-color: black;
   transition: width 0.2s;
@@ -45,17 +63,17 @@
 }
 .bottomBar3 {
   position: absolute;
-  height: 3%;
+  height: 0.2vh;
   width: 2%;
   background-color: black;
   transition: width 0.2s;
 }
 .NavButtons:hover > .bottomBar3 {
-  width: 3%;
+  width: 0.2vh;
 }
 .bottomBar4 {
   position: absolute;
-  height: 3%;
+  height: 0.2vh;
   width: 1.5%;
   background-color: black;
   transition: width 0.2s;
@@ -65,7 +83,7 @@
 }
 .bottomBar5 {
   position: absolute;
-  height: 3%;
+  height: 0.2vh;
   width: 2.5%;
   background-color: black;
   transition: width 0.2s;

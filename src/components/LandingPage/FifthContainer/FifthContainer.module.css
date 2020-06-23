@@ -82,7 +82,7 @@
     width: 30%;
     top: -373%;
     left: 70%;
-    z-index: 10;
+    /* z-index: 10; */
   }
   .E{
     position: relative;

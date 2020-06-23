@@ -24,7 +24,7 @@ const InnerNavBar = props => {
                 }}>GS/GK Finance</div>
                 <div className={classes.Link} style={{
                     borderBottom: props.active === '6' ?  'solid 4px #6990D5' : '',
-                }}>Training Programme</div>
+                }}>Financial Training</div>
             </nav>
         </div>
     );

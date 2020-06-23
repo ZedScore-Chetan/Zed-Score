@@ -10,14 +10,15 @@ import NavBar from '../NavBar/NavBar';
 // import ThirdContainer from './ThirdContainer/ThirdContainer';
 
 const LandingPage = props => {
+
     return (
         <div className={classes.Container}>
-            <NavBar isLoggedIn={false}/>
+            <NavBar />
             <FirstContainer />
             <SecondContainer />
             <ThirdContainer />
             <FourthContainer />
-            <FifthContainer />
+            {/* <FifthContainer /> */}
         </div>
     )
 };

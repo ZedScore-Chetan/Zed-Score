@@ -1,50 +1,58 @@
 @font-face {
-  font-family: 'poppins';
-  src: local('poppins'), url('./assets/Fonts/Poppins-Medium.ttf') format('truetype');
+  font-family: "poppins";
+  src: local("poppins"),
+    url("./assets/Fonts/Poppins-Medium.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'poppins-bold';
-  src: local('poppins-bold'), url('./assets/Fonts/Poppins-Bold.ttf') format('truetype');
+  font-family: "poppins-bold";
+  src: local("poppins-bold"),
+    url("./assets/Fonts/Poppins-Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'poppins-semi-bold';
-  src: local('poppins-semi-bold'), url('./assets/Fonts/Poppins-SemiBold.ttf') format('truetype');
+  font-family: "poppins-semi-bold";
+  src: local("poppins-semi-bold"),
+    url("./assets/Fonts/Poppins-SemiBold.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'poppins-medium';
-  src: local('poppins-medium'), url('./assets/Fonts/Poppins-Medium.ttf') format('truetype');
+  font-family: "poppins-medium";
+  src: local("poppins-medium"),
+    url("./assets/Fonts/Poppins-Medium.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'poppins-thin';
-  src: local('poppins-thin'), url('./assets/Fonts/Poppins-Thin.ttf') format('truetype');
+  font-family: "poppins-thin";
+  src: local("poppins-thin"),
+    url("./assets/Fonts/Poppins-Thin.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'inde';
-  src: local('inde'), url('./assets/Fonts/IndieFlower-Regular.ttf') format('truetype');
+  font-family: "inde";
+  src: local("inde"),
+    url("./assets/Fonts/IndieFlower-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'poppins-regular';
-  src: local('poppins-regular'), url('./assets/Fonts/Poppins-Regular.ttf') format('truetype');
+  font-family: "poppins-regular";
+  src: local("poppins-regular"),
+    url("./assets/Fonts/Poppins-Regular.ttf") format("truetype");
 }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
-*{
-  margin:0;
-  padding:0;
-  /* box-sizing: border-box; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

@@ -21,9 +21,10 @@ const ThirdContainer = props => {
                         <BlackCard />
                         <BlackCard />
                     </div>
-                    <div className={classes.white}></div>
-                    <div className={classes.TextContainer}>
-                        <div className={classes.text}>We are Here You Can be Anywhere !</div>
+                    <div className={classes.container3}>
+                        <div className={classes.TextContainer}>
+                            <div className={classes.text}>We are Here, You Can be Anywhere !</div>
+                        </div>
                     </div>
                 </div>
             </div>

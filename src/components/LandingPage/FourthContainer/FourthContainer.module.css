@@ -1,8 +1,4 @@
 .FourthContainer{
-    position: absolute;
-    top: 360%;
-    width: 100%;
-    height: 200%;
     overflow: hidden;
 }
 
@@ -12,24 +8,16 @@
     width: 100%;
   }
   .BottomPinkContainer{
-    position: relative;
-    top: 0;
     width: 100%;
   }
-  .FourthTextContainer{
-    position: relative;
-    left: 10%;
-    top: -80%;
+  /* .FourthTextContainer{
   }
   .BuzzText{
-    position: relative;
+    font-size: 6vh;
     font-family: poppins-bold;
     color: white;
-    font-size: 300%;
-    padding-top: 3%;
-    width: 30%;
-  }
-  .BottomBar4{
+  } */
+  /* .BottomBar4{
     position: relative;
     top: -90%;
     height: 5%;
@@ -66,4 +54,4 @@
     position: relative;
     height: 100%;
     width: auto;
-  }
+  } */
