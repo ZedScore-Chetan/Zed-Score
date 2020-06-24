@@ -1,0 +1,65 @@
+.wrapper {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70vw;
+    height: 100vh;
+    background-color: #274662;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    width: 70vw;
+    height: 100vh;
+    grid-template-areas: "courseInformationRegion academicInformationRegion" "otherInformationRegion otherInformationRegion";
+}
+
+.courseInformationRegion {
+    grid-area: courseInformationRegion;
+    /* background-color: tomato; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.academicInformationRegion {
+    grid-area: academicInformationRegion;
+    /* background-color: turquoise; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.otherInformationRegion {
+    grid-area: otherInformationRegion;
+    /* background-color: wheat; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.otherInformationRegion>div {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    width:15%;
+    height:100%;
+    align-items: center;
+}
+
+.otherInformationRegion>div>div{
+    display:block;
+    color:white;
+    font-size: 1.2em;
+    width:200%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top:-50px;
+    font-weight: 700;
+}

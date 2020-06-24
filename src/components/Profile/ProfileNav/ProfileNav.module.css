@@ -1,0 +1,32 @@
+.navWrapper{
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+    width:30vw;
+    background-color: #E6E6E6;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.buttonWrapper{
+    display:flex;
+    flex-direction: column;
+    margin-right:30px;
+    z-index:100;
+}
+
+.navWrapper>div>div{
+    background-color: #313131;
+    padding:20px 100px 20px 40px;
+    text-align:left;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color:white;
+    box-shadow: 5px 4px 10px -3px rgba(130,130,130,1);
+}
+
+.selected{
+    width:calc(100% + 60px);
+    padding-right: 150px;
+    font-weight: 900;
+}

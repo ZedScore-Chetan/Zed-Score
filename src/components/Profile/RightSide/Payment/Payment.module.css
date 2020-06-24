@@ -1,0 +1,85 @@
+.wrapper {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70vw;
+    height: 100vh;
+    background-color: #274662;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5fr 1fr;
+    gap: 0px 0px;
+    width:100%;
+    height:100%;
+    grid-template-areas: "profileRegion contactInformationRegion" "controlsRegion controlsRegion";
+}
+
+.nameAndPhotoRegion {
+    grid-area: nameAndPhotoRegion;
+    /* background-color:yellow; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nameAndPhotoRegion > img{
+    height:20vh;
+    width:20vh;
+    border-radius: 50% 50%;
+    margin-bottom: 10px;
+}
+
+.nameAndPhotoRegion > p{
+    font-size: 1.5em;
+    color:white;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.courseInformationRegion {
+    grid-area: profileRegion;
+    /* background-color:gray; */
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paymentInformationRegion {
+    grid-area: contactInformationRegion;
+    /* background-color:lightblue; */
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.controlsRegion {
+    grid-area: controlsRegion;
+    /* background-color: lightgoldenrodyellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.blueButton{
+    padding:1.2% 1.5%;
+    outline: transparent;
+    color:white;
+    text-transform: capitalize;
+    background-color: #2699FB;
+    font-size: 1.2em;
+    border:none;
+    box-shadow: none;
+    cursor:pointer;
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
