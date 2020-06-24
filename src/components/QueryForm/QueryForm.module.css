@@ -1,0 +1,64 @@
+.form {
+  height: 60vh;
+  width: 100%;
+  /* background-color:red; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* background-color: green; */
+}
+
+.container {
+  width: 50%;
+  /* background-color: red; */
+  margin: 2vh 0;
+}
+
+.header {
+  font-size: 2.5vh;
+  font-family: poppins-medium;
+}
+
+.inputText {
+  height: 5vh;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  padding-left: 0.5vw;
+  font-size: 3vh;
+}
+
+.inputTextArea {
+  /* height: 5vh; */
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  padding-left: 0.5vw;
+  font-size: 2.5vh;
+}
+
+.sendBtnContainer{
+    width: 40%;
+}
+
+.sendBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    color: black;
+    height: 6vh;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: poppins-bold;
+    transition: all 0.1s linear;
+}
+
+.sendBtn:hover{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}

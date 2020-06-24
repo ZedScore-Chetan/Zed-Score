@@ -33,17 +33,17 @@ const NavBar = props => {
     return (
         <div className={classes.container}>
             <nav className={classes.Nav}>
-                <div className={classes.toggleContainer} onClick={showNavSideDrawer}>
+                {/* <div className={classes.toggleContainer} onClick={showNavSideDrawer}>
                     <div className={classes.toggleBar}></div>
                     <div className={classes.toggleBar}></div>
                     <div className={classes.toggleBar}></div>
-                </div>
+                </div> */}
                 <div className={classes.HomePictureContainer}>
                     <img src={Home} className={classes.HomePicture} onClick={homeClickedHandler} />
                 </div>
                 <div className={classes.NavButtons}>About Us<div className={classes.bottomBar1}></div></div>
                 <div className={classes.NavButtons}>Our Plans<div className={classes.bottomBar2}></div></div>
-                <div className={classes.NavButtons}>Library<div className={classes.bottomBar3}></div></div>
+                <Link to="/library" className={classes.NavButtons}>Library<div className={classes.bottomBar3}></div></Link>
                 <div className={classes.NavButtons}>Blogs<div className={classes.bottomBar4}></div></div>
                 <div className={classes.NavButtons}>Contact Us<div className={classes.bottomBar5}></div></div>
                 {rightElement}

@@ -11,7 +11,7 @@ const SecondContainer = props => {
             <div className={classes.container}>
                 <div className={classes.SecondTextContainer}>
                     <div className={classes.SecondText1}><div className={classes.BottomBar2}></div>Who are we?</div>
-                    <div className={classes.SecondText2}>ZedScore provides you with the best possible study material to bring out the best in you for various exams like CAT,GMAT</div>
+                    <div className={classes.SecondText2}>Z score is and online platform where our ‘Passion to teach’ meets your ‘curiosity’.  We provide online classes for MBA, Banking exams, placement preparation and financial trainings which is an art of storytelling for us.</div>
                     <div className={classes.SecondText3}>We bring out the best version of you</div>
                 </div>
                 <div className={classes.SecondImageContainer}>

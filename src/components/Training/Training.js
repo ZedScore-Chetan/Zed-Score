@@ -2,12 +2,8 @@ import React from 'react';
 import classes from './Training.module.css';
 
 import NavBar from '../NavBar/NavBar';
-// import TrainingTopImage from '../../assets/TrainingTopImage.png';
-// import TrainingCard from '../TrainingCard/TrainingCard';
-// import bottomBlackThin from '../../assets/bottomBlackThin.png';
 
 const Training = props => {
-    // var materials = [{ item: 1 }, { item: 2 }, { item: 3 }, { item: 4 }, { item: 5 }, { item: 6 }, { item: 7 }, { item: 8 }];
     return (
         <div className={classes.Container}>
             <NavBar />
@@ -33,24 +29,23 @@ const Training = props => {
                     <div className={classes.heading}>For whom ?</div>
                     <div className={classes.text}>
                         The basic version is more suitable for those who are -
+                            <br />
                         <br />
-                        <br />
-                        •	Preparing for the upcoming interviews of banks.
-                        <br />
-                        •	Thinking of joining the financial industry and need clarity of different roles inside.
-                        <br />
-                        •	Non-financial graduates seeking for the placements in banks and financial consultancy firms.
-                        <br />
-                        <br />
+                            •	Preparing for the upcoming interviews of banks.
+                            <br />
+                            •	Thinking of joining the financial industry and need clarity of different roles inside.
+                            <br />
+                            •	Non-financial graduates seeking for the placements in banks and financial consultancy firms.
+                            </div>
+                    <div className={classes.text}>
                         The Advance version is more suitable for those who are  -
-                        <br /><br />
-                        •	Working in banks and wants to improve their skills sets.
-                        <br />
-                        •	Thinking for job switch/promotion.
-                        <br />
-                        •	Planning for CFA/FRM certifications and wants to strengthen the basics for it.
-                        <br />
-
+                            <br /><br />
+                            •	Working in banks and wants to improve their skills sets.
+                            <br />
+                            •	Thinking for job switch/promotion.
+                            <br />
+                            •	Planning for CFA/FRM certifications and wants to strengthen the basics for it.
+                            <br />
                     </div>
                 </div>
             </div>
@@ -72,19 +67,22 @@ const Training = props => {
                         <div className={classes.heading}>Equity Research</div>
                         <div className={classes.text}>
                             In this research department of financial institutions we dive into ‘buy side’ and ‘sell side‘research. We discuss the role of Asset Managers (Portfolio Managers, Hedge Funds and Private Equity), Insurance firms. We do the analysis of Investment Banks, Brokers, and Research houses. Further, we walk you through the fundamental and technical methodologies to achieve the above said.<br /><br />
-                        Fundamental Analysis, here we analyze - <br /><br />
-                        •	The economy, industry and the company<br />
-                        •	Parallel understanding the line of business<br />
-                        •	Financials forecasting and financial modeling<br />
-                        •	Firm valuation.<br /><br />
-
-                        In the Technical analysis, we analyze - <br /><br />
-                        •	Based on historically seen human behavior<br />
-                        •	Studying stock price history and focuses on spotting<br />
-                        •	Trends and common pattern formations and indicators<br />
-                        •	Identifying a better time to time and sell stocks<br />
-
-
+                            <div className={classes.txtContainer}>
+                                <div className={classes.txt}>
+                                    Fundamental Analysis, here we analyze - <br /><br />
+                            •	The economy, industry and the company<br />
+                            •	Parallel understanding the line of business<br />
+                            •	Financials forecasting and financial modeling<br />
+                            •	Firm valuation.
+                            </div>
+                                <div className={classes.txt}>
+                                    In the Technical analysis, we analyze - <br /><br />
+                            •	Based on historically seen human behavior<br />
+                            •	Studying stock price history and focuses on spotting<br />
+                            •	Trends and common pattern formations and indicators<br />
+                            •	Identifying a better time to time and sell stocks<br />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -105,7 +103,7 @@ const Training = props => {
                 </div>
                 <div className={classes.textContainer2}>
                     <div className={classes.innerContainer}>
-                        <div className={classes.heading}>. Banking and its operation</div>
+                        <div className={classes.heading}>Banking and its operation</div>
                         <div className={classes.text}>
                             This segment majorly discusses the government and financial bodies mostly within a country. The session tries to draw the connect between commercial banks, Investment banks and central banks.
                             The trainees will get to know –<br /><br />

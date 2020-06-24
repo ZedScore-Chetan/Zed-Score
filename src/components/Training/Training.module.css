@@ -2,10 +2,13 @@
   background-color: #7300f7;
   width: 100vw;
   height: auto;
+  margin-top: 10vh;
+  width: 85vw;
+  margin-left: 15vw;
 }
 
 .cardsContainer {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 5vh;
@@ -19,7 +22,7 @@
   justify-content: center;
   flex-direction: column;
   padding: 5vh;
-  width: 25vw;
+  width: 28%;
   border-radius: 20px;
   background-color: rgba(245, 247, 245);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -36,7 +39,7 @@
 
 .text {
   font-family: poppins-medium;
-  text-align: center;
+  /* text-align: center; */
   font-size: 2vh;
 }
 
@@ -45,16 +48,16 @@
 }
 
 .bottomContainer {
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 
 .textContainer1 {
-  width: 100vw;
+  width: 100%;
   display: flex;
 }
 .textContainer2 {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
 }
@@ -72,4 +75,9 @@
 
 .innerContainer:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.txtContainer{
+  display: flex;
+  justify-content: space-between;
 }

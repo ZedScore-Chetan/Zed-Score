@@ -1,57 +1,199 @@
-.FourthContainer{
-    overflow: hidden;
+.FourthContainer {
+  margin-top: 10vh;
+  overflow: hidden;
 }
 
-.BottomPinkCurveContainer{
-    position: relative;
-    height: 100%;
-    width: 100%;
-  }
-  .BottomPinkContainer{
-    width: 100%;
-  }
-  /* .FourthTextContainer{
-  }
-  .BuzzText{
-    font-size: 6vh;
-    font-family: poppins-bold;
-    color: white;
-  } */
-  /* .BottomBar4{
-    position: relative;
-    top: -90%;
-    height: 5%;
-    width: 28%;
-    background-color: #6f9dee;
-    border-radius: 20px;
-  }
-  .Imgscontainer{
-    position: relative;
-    top:-70%;
-    width: 80%;
-    left: 10%;
-    height: 25%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .WhiteCard{
-    position: relative;
-    height: 100%;
-    width: 28%;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: -1px 26px 29px #00000063;
-  }
-  .Econtainer{
-    position: relative;
-    height: 80%;
-    top: -103%;
-    width: 30%;
-    left: 67%;
-  }
-  .E{
-    position: relative;
-    height: 100%;
-    width: auto;
-  } */
+.BottomPinkCurveContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.BottomPinkContainer {
+  width: 100%;
+}
+
+.topContainer {
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  top: 480vh;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
+.FourthTextContainer {
+  margin-left: 6vw;
+  font-size: 6vh;
+  margin-bottom: 25vh;
+}
+.BuzzText {
+  font-size: 6vh;
+  font-family: poppins-bold;
+  color: white;
+}
+
+.buzzAbutUsBottomText{
+  font-size: 4vh;
+  font-family: poppins-bold;
+  color: white;
+  margin-top: 5vh;
+}
+
+.Imgscontainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 55vh;
+}
+.WhiteCard {
+  position: relative;
+  height: 100%;
+  width: 24%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: -1px 26px 29px #00000063;
+}
+.Econtainer {
+  height: 80vh;
+  width: 25vw;
+  transform: translateY(-30vh) translateX(60vw) ;
+}
+.E {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.BottomBlueCurveContainer {
+  position: absolute;
+  width: 100vw;
+  transform: translatey(-80vh)
+}
+.BottomBlueContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bottomContainer{
+  position: absolute;
+  transform: translateY(-50vh);
+  width: 100vw;
+  z-index: 1000;
+  /* background-color: green; */
+}
+
+.firstContainer{
+  margin-top:30vh;
+  display: flex;
+  width: 100vw;
+  /* background-color: red; */
+  align-items: center;
+  /* justify-content: space-evenly; */
+}
+
+.RectContainer {
+  position: relative;
+  width: 45vw;
+  margin-left: 6vw;
+  margin-right: 10vw;
+  /* margin-top: 20vh; */
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid black; */
+  padding: 5vh;
+  background-color: white;
+  border-radius: 30px;
+}
+/* .Rect {
+  height: 100%;
+  width: 100%;
+} */
+.RoundGirlImgContainer {
+  position: relative;
+  /* top: -135%;
+  height: 20%;
+  width: 20%;
+  left: 60%; */
+  height: 30vh;
+  width: 30vh;
+}
+.RoundGirlImg {
+  height: 100%;
+  width: auto;
+}
+.Name {
+  position: relative;
+  font-family: poppins-bold;
+  color: black;
+  font-size: 5vh;
+}
+.Founder {
+  margin-bottom: 2vh;
+  position: relative;
+  font-family: poppins-medium;
+  color: black;
+  font-size: 4vh;
+}
+.InnerText {
+  position: relative;
+  font-family: poppins-regular;
+  color: black;
+  font-size: 3vh;
+  width: 80%;
+}
+.TwoMenImgContainer {
+  position: relative;
+  /* height: 50%;
+  width: 70%;
+  left: 15%;
+  top: -125%; */
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
+}
+.TwoMenImg {
+  position: relative;
+  height: 100%;
+  width: auto;
+}
+.Dcontainer {
+  position: absolute;
+  /* top: -200%;
+  height: 70%;
+  width: 70%;
+  left: 35%; */
+  height: 70vh;
+  transform: translateX(40vw) translateY(-60vh);
+}
+.D {
+  height: 100%;
+  width: auto;
+}
+
+.digitalMarketingTextContainer{
+  width: 100vw;
+  transform: translateY(-20vh);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.digitalMarketingText{
+  font-size: 6vh;
+  font-family: poppins-bold;
+  color: white;
+  /* margin-left: 6vw; */
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.digitalMarketingText:hover{
+  text-decoration: underline;
+}
