@@ -1,18 +1,21 @@
 .Container {
-  background-color: #7300f7;
+  /* background-color: #7300f7; */
   width: 100vw;
   height: auto;
-  margin-top: 10vh;
-  width: 85vw;
-  margin-left: 15vw;
+  margin-top: 16vh;
+  width: 100vw;
+  /* margin-left: 15vw; */
 }
 
 .cardsContainer {
-  width: 100%;
+  background-color: #7300f7;
+  width: 100vw;
   display: flex;
   justify-content: center;
-  margin-top: 5vh;
+  padding-top: 5vh;
   padding-bottom: 5vh;
+  /* margin-top: 5vh;
+  padding-bottom: 5vh; */
 }
 
 .card {
@@ -22,7 +25,7 @@
   justify-content: center;
   flex-direction: column;
   padding: 5vh;
-  width: 28%;
+  width: 25%;
   border-radius: 20px;
   background-color: rgba(245, 247, 245);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -48,6 +51,7 @@
 }
 
 .bottomContainer {
+  padding: 5vh 0;
   width: 100%;
   height: auto;
 }
@@ -55,10 +59,12 @@
 .textContainer1 {
   width: 100%;
   display: flex;
+  align-items: center;
 }
 .textContainer2 {
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: flex-end;
 }
 
@@ -77,7 +83,25 @@
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.txtContainer{
+.txtContainer {
   display: flex;
   justify-content: space-between;
+}
+
+.rightBulgeContainer{
+  height: 50vh;
+  transform: translateX(17vw);
+}
+
+.rightBulge{
+  height: 100%;
+}
+
+.leftBulgeContainer{
+  height: 50vh;
+  transform: translateX(-15vw);
+}
+
+.leftBulge{
+  height: 100%;
 }

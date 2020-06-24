@@ -38,13 +38,40 @@
   cursor: pointer;
 }
 
-.NavButtons {
+.NavButtonsInactive {
   font-family: poppins-regular;
   cursor: pointer;
   text-decoration: none;
   outline: none;
   color: black;
+  /* background-color: red; */
 }
+
+.NavButtonsActive{
+  font-family: poppins-regular;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  border: 1px solid black;
+}
+
+.NavButtonsActive > div{
+  display: none;
+}
+
+/* .NavButtonsInactive1 {
+  font-family: poppins-regular;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  border: 2px solid black;
+}
+
+.NavButtonsInactive1 div{
+  display: none;
+} */
 
 .bottomBar1 {
   position: absolute;
@@ -53,7 +80,7 @@
   background-color: black;
   transition: width 0.2s;
 }
-.NavButtons:hover > .bottomBar1 {
+.NavButtonsInactive:hover > .bottomBar1 {
   width: 3.5%;
 }
 .bottomBar2 {
@@ -63,7 +90,7 @@
   background-color: black;
   transition: width 0.2s;
 }
-.NavButtons:hover > .bottomBar2 {
+.NavButtonsInactive:hover > .bottomBar2 {
   width: 4%;
 }
 .bottomBar3 {
@@ -73,7 +100,7 @@
   background-color: black;
   transition: width 0.2s;
 }
-.NavButtons:hover > .bottomBar3 {
+.NavButtonsInactive:hover > .bottomBar3 {
   width: 3%;
 }
 .bottomBar4 {
@@ -83,7 +110,7 @@
   background-color: black;
   transition: width 0.2s;
 }
-.NavButtons:hover > .bottomBar4 {
+.NavButtonsInactive:hover > .bottomBar4 {
   width: 2.5%;
 }
 .bottomBar5 {
@@ -93,7 +120,7 @@
   background-color: black;
   transition: width 0.2s;
 }
-.NavButtons:hover > .bottomBar5 {
+.NavButtonsInactive:hover > .bottomBar5 {
   width: 4%;
 }
 

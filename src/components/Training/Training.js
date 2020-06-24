@@ -2,6 +2,8 @@ import React from 'react';
 import classes from './Training.module.css';
 
 import NavBar from '../NavBar/NavBar';
+import GreenBulge from '../../assets/green2.png';
+import RedBulge from '../../assets/red2.png';
 
 const Training = props => {
     return (
@@ -61,8 +63,14 @@ const Training = props => {
                             	Back office: Compliance, Accounting, Analytics, IT
                         </div>
                     </div>
+                    <div className={classes.rightBulgeContainer}>
+                        <img src={GreenBulge} alt="greenBulge" className={classes.rightBulge} />
+                    </div>
                 </div>
                 <div className={classes.textContainer2}>
+                    <div className={classes.leftBulgeContainer}>
+                        <img src={RedBulge} alt="redBulge" className={classes.leftBulge} />
+                    </div>
                     <div className={classes.innerContainer}>
                         <div className={classes.heading}>Equity Research</div>
                         <div className={classes.text}>
@@ -100,8 +108,14 @@ const Training = props => {
                             In the same module we discuss the Product valuation, asset classes and their inter-relations, Trading strategies & Greeks. Further, the regulating bodies and their mandates are also explained. At last, the major financial crisis of history is also discussed.
                         </div>
                     </div>
+                    <div className={classes.rightBulgeContainer}>
+                        <img src={GreenBulge} alt="greenBulge" className={classes.rightBulge} />
+                    </div>
                 </div>
                 <div className={classes.textContainer2}>
+                    <div className={classes.leftBulgeContainer}>
+                        <img src={RedBulge} alt="redBulge" className={classes.leftBulge} />
+                    </div>
                     <div className={classes.innerContainer}>
                         <div className={classes.heading}>Banking and its operation</div>
                         <div className={classes.text}>
