@@ -1,0 +1,89 @@
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.homeContainer {
+  width: 10vh;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home {
+  height: 60%;
+  cursor: pointer;
+}
+
+.cardsContainer{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.cardLeft {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 4vw;
+}
+.cardRight {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.innerContainer {
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 60vw;
+  padding: 5vh;
+  border-radius: 20px;
+  margin: 5vh;
+  color: black;
+}
+
+.innerContainer:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.txtContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightBulgeContainer {
+  height: 50vh;
+  transform: translateX(17vw);
+}
+
+.rightBulge {
+  height: 100%;
+}
+
+.leftBulgeContainer {
+  height: 50vh;
+  transform: translateX(-15vw);
+}
+
+.leftBulge {
+  height: 100%;
+}
+
+.heading {
+  font-family: poppins-bold;
+  text-align: center;
+  margin-bottom: 2vh;
+  font-size: 4vh;
+}
+
+.text {
+  font-family: poppins-medium;
+  /* text-align: center; */
+  font-size: 2vh;
+}

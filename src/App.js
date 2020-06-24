@@ -7,6 +7,7 @@ import LandingPage from './components/LandingPage/LandingPage';
 import LoginPage from './containers/LoginPage/LoginPage';
 import Training from './components/Training/Training';
 import Library from './components/Library/Library';
+import DigitalMarketing from './components/DigitalMarketing/DigitalMarketing';
 // import Layout from './hoc/Layout';
 // import InnerNavBar from './components/InnerNavBar/InnerNavBar';
 // import TrainingCard from './components/TrainingCard/TrainingCard';
@@ -20,6 +21,7 @@ function App() {
       <Route path="/training" exact render={() => <Training />} />
       <Route path="/login" exact render={() => <LoginPage />} />
       <Route path="/library" render={() => <Library />} />
+      <Route path="/marketing" render={() => <DigitalMarketing />} />
     </Switch>
 
   );

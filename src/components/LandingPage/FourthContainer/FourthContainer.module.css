@@ -192,6 +192,8 @@
   /* margin-left: 6vw; */
   cursor: pointer;
   transition: all 0.2s linear;
+  text-decoration: none;
+  outline: none;
 }
 
 .digitalMarketingText:hover{

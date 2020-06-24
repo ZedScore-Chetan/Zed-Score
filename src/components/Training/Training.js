@@ -54,7 +54,7 @@ const Training = props => {
             <div className={classes.bottomContainer}>
                 <div className={classes.textContainer1}>
                     <div className={classes.innerContainer}>
-                        <div className={classes.heading}>Investment Banking</div>
+                        <div className={classes.heading}>1. Investment Banking</div>
                         <div className={classes.text}>The module covers three main IB services of investment banks i.e. deal making / Advisory, Capital raising and Executing transactions.
                         This is done by discussing role of Bulge Bracket I-Banks, Middle Market I-Banks and Boutique I-Banks.
                             We connect the dots of different operations within the industry and explain how they are different from retail or commercial banks. In this regard, the below services are discussed – <br /><br />
@@ -72,7 +72,7 @@ const Training = props => {
                         <img src={RedBulge} alt="redBulge" className={classes.leftBulge} />
                     </div>
                     <div className={classes.innerContainer}>
-                        <div className={classes.heading}>Equity Research</div>
+                        <div className={classes.heading}>2. Equity Research</div>
                         <div className={classes.text}>
                             In this research department of financial institutions we dive into ‘buy side’ and ‘sell side‘research. We discuss the role of Asset Managers (Portfolio Managers, Hedge Funds and Private Equity), Insurance firms. We do the analysis of Investment Banks, Brokers, and Research houses. Further, we walk you through the fundamental and technical methodologies to achieve the above said.<br /><br />
                             <div className={classes.txtContainer}>
@@ -96,7 +96,7 @@ const Training = props => {
                 </div>
                 <div className={classes.textContainer1}>
                     <div className={classes.innerContainer}>
-                        <div className={classes.heading}>Risk Management</div>
+                        <div className={classes.heading}>3. Risk Management</div>
                         <div className={classes.text}>
                             In this segment the basics of risk management are covered i.e. the process of identification, Analysis, Acceptance and Mitigation of uncertainty.
                             As we proceed the risk quantification is done by segregating the risk into –<br /><br />
@@ -117,7 +117,7 @@ const Training = props => {
                         <img src={RedBulge} alt="redBulge" className={classes.leftBulge} />
                     </div>
                     <div className={classes.innerContainer}>
-                        <div className={classes.heading}>Banking and its operation</div>
+                        <div className={classes.heading}>4. Banking and its operation</div>
                         <div className={classes.text}>
                             This segment majorly discusses the government and financial bodies mostly within a country. The session tries to draw the connect between commercial banks, Investment banks and central banks.
                             The trainees will get to know –<br /><br />

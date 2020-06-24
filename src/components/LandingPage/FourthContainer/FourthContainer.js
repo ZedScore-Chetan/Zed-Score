@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './FourthContainer.module.css';
+import { Link } from 'react-router-dom';
 
 import BottomPinkCurve from '../../../assets/BottomPinkCurve.png';
 import E from '../../../assets/E.png';
@@ -53,7 +54,7 @@ const FourthContainer = props => {
                     <img src={RedWave} alt="redWave" />
                 </div>
                 <div className={classes.digitalMarketingTextContainer}>
-                    <div className={classes.digitalMarketingText}>Check Out Our Digital Marketing Page</div>
+                    <Link to="/marketing" className={classes.digitalMarketingText}>Check Out Our Digital Marketing Page</Link>
                 </div>
             </div>
         </div>
