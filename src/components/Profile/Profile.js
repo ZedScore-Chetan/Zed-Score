@@ -53,25 +53,43 @@ class Profile extends Component {
         },
         communications: [
             {
+                announcementID : 0,
                 issuer: 'Instructor1',
                 pic: profilePic,
                 time: new Date().toISOString().slice(0, 10),
                 subject: 'Quants Class Rescheduled',
-                message: 'Some Random Message',
+                message: "Hello Students! Due to unavoidable circumstances. Today's class has to be shifted to 7pm tomorrow\nMulti Line messages are also allowed.",
             },
             {
+                announcementID : 1,
                 issuer: 'Instructor2',
                 pic: profilePic,
                 time: new Date().toISOString().slice(0, 10),
                 subject: 'Quants Class Cancelled',
-                message: 'Some more Random Message',
+                message: "Hello Students! Due to unavoidable circumstances. Today's class has to be shifted to 7pm tomorrow\nAuto Resize are also allowed.",
+            },
+            {
+                announcementID : 2,
+                issuer: 'Instructor3',
+                pic: profilePic,
+                time: new Date().toISOString().slice(0, 10),
+                subject: 'Quants Class Scheduled',
+                message: "Hello Students! Due to unavoidable circumstances. Today's class has to be shifted to 7pm tomorrow\nMulti Line messages are also allowed.",
+            },
+            {
+                announcementID : 3,
+                issuer: 'Instructor4',
+                pic: profilePic,
+                time: new Date().toISOString().slice(0, 10),
+                subject: 'Quants Class Cancelled',
+                message: "Hello Students! Due to unavoidable circumstances. Today's class has to be shifted to 7pm tomorrow. Hello Students! Due to unavoidable circumstances.\n\n Today's class has to be shifted to 7pm tomorrow\nMulti Line messages are also allowed.",
             }
         ],
     };
 
 
 render() {
-    var active = 2;
+    var active = 3;
     var RightComponent = null;
     switch (active) {
         case 0:
@@ -84,7 +102,7 @@ render() {
             RightComponent = <Payment courseInformation={this.profileData.curriculum.courseInformation} paymentInformation={this.profileData.paymentInformation} />;
             break;
         case 3:
-            RightComponent = <Communications profileData={this.profileData} />;
+            RightComponent = <Communications courseInformation={this.profileData.curriculum.courseInformation} paymentInformation={this.profileData.paymentInformation} communications={this.profileData.communications} />;
             break;
         default:
             // Error

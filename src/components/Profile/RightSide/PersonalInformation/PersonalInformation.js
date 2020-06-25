@@ -9,7 +9,6 @@ import backgroundImage from '../../Assets/background.png';
 
 
 const PersonalInformation = (props) => {
-    console.log(props);
     return (
         <div style={{ backgroundImage: `url(${backgroundImage})` }} className={classes.wrapper}>
             <div className={classes.gridContainer}>

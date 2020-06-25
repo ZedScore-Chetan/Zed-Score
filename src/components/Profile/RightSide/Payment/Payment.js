@@ -8,7 +8,7 @@ import classes from './Payment.module.css';
 import backgroundImage from '../../Assets/background.png';
 
 
-const PersonalInformation = (props) => {
+const Payment = (props) => {
     return (
         <div style={{ backgroundImage: `url(${backgroundImage})` }} className={classes.wrapper}>
             <div className={classes.gridContainer}>
@@ -29,4 +29,4 @@ const PersonalInformation = (props) => {
     );
 }
 
-export default PersonalInformation;
+export default Payment;
