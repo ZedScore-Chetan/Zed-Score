@@ -11,6 +11,7 @@ import thunk from 'redux-thunk';
 import './assets/Fonts/Poppins-Medium.ttf';
 import authReducer from './store/reducers/auth';
 import navReducer from './store/reducers/SideDrawer';
+import blogsReducer from './store/reducers/blogs';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -18,6 +19,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const rootReducer = combineReducers({
   auth: authReducer,
   nav: navReducer,
+  blogs: blogsReducer,
 })
 
 const store = createStore(rootReducer, composeEnhancers(

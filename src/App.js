@@ -9,6 +9,8 @@ import Training from './components/Training/Training';
 import Library from './components/Library/Library';
 import DigitalMarketing from './components/DigitalMarketing/DigitalMarketing';
 import Profile from './components/Profile/Profile';
+import Blogs from './components/Blogs/Blogs';
+import BlogContent from './components/BlogContent/BlogContent';
 // import Layout from './hoc/Layout';
 // import InnerNavBar from './components/InnerNavBar/InnerNavBar';
 // import TrainingCard from './components/TrainingCard/TrainingCard';
@@ -17,11 +19,11 @@ import Profile from './components/Profile/Profile';
 function App() {
 
   useEffect(() => {
-    fetch('https://clearquantstest.herokuapp.com/api/v1/blog-list/', { method: "GET" })
-    .then(res => res.json())
-    .then(data => console.log(data))
+    // fetch('https://clearquantstest.herokuapp.com/api/v1/blog/', { method: "GET" })
+    // .then(res => res.json())
+    // .then(data => console.log(data))
     // .then(res => console.log(res.json()))
-      // .then(data => console.log(data))
+    // .then(data => console.log(data))
   })
 
   return (
@@ -33,6 +35,8 @@ function App() {
       <Route path="/library" render={() => <Library />} />
       <Route path="/profile" render={() => <Profile />} />
       <Route path="/marketing" render={() => <DigitalMarketing />} />
+      <Route path="/blogs" exact render={() => <Blogs />} />
+      <Route path="/blogs/content" render={() => <BlogContent />} />
     </Switch>
 
   );

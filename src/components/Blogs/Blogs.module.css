@@ -1,0 +1,138 @@
+.container {
+  width: 100vw;
+  margin-top: 10vh;
+}
+
+.searchBar {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.searchIconContainer {
+  height: 4vh;
+  width: 4vh;
+  opacity: 0.5;
+  margin-right: 1vw;
+}
+
+.searchIcon {
+  height: 100%;
+  width: 100%;
+}
+
+.search {
+  height: 4vh;
+  width: 10vw;
+  border: 1px solid #ccc;
+  border-radius: 2.5vh;
+  outline: none;
+  text-decoration: none;
+  padding-left: 1vw;
+  font-size: 2vh;
+  margin-right: 10vw;
+}
+.search:hover {
+  outline: none;
+  text-decoration: none;
+}
+
+.blogsConainer {
+  /* margin-top: 5vh; */
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.blogLeftContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 10vw;
+}
+
+.blogRightContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10vw;
+    margin-left: 10vw;
+  }
+
+.blog {
+  display: flex;
+  width: 55vw;
+  border: 2px solid;
+  margin: 5vh 0;
+}
+
+.imgContainer {
+  /* height: 100%; */
+  width: 30%;
+  border-right: 2px solid black;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  /* height: 100%; */
+  width: 100%;
+  height: auto;
+}
+
+.textContainer {
+  /* height: 100%; */
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 7vh;
+  background-color: #e6e6e6;
+}
+
+.heading{
+    font-size: 4vh;
+    font-family: poppins-bold;
+    margin-bottom: 2vh;
+}
+
+.text {
+  font-family: poppins-medium;
+  font-size: 2vh;
+}
+
+.readMoreBtn{
+    border: 2px solid #2699FB;
+    padding: 1vh 1vw;
+    margin-top: 4vh;
+    cursor: pointer;
+    font-family: poppins-medium;
+    color: #2699FB;
+    transition: all 0.1s linear;
+}
+
+.readMoreBtn:hover{
+    transform: scale(1.1);
+}
+
+.rightBulgeContainer {
+  height: 50vh;
+  transform: translateX(17vw);
+}
+
+.rightBulge {
+  height: 100%;
+}
+
+.leftBulgeContainer {
+  height: 50vh;
+  transform: translateX(-15vw);
+}
+
+.leftBulge {
+  height: 100%;
+}

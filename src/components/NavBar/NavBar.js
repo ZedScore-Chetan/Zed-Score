@@ -62,7 +62,7 @@ const NavBar = props => {
                 <div className={classes.NavButtonsInactive}>About Us<div className={classes.bottomBar1}></div></div>
                 <div className={classes.NavButtonsInactive}>Our Plans<div className={classes.bottomBar2}></div></div>
                 <Link to="/library/training" className={classes.NavButtonsInactive}>Library<div className={classes.bottomBar3}></div></Link>
-                <div className={classes.NavButtonsInactive}>Blogs<div className={classes.bottomBar4}></div></div>
+                <Link to="/blogs" className={classes.NavButtonsInactive}>Blogs<div className={classes.bottomBar4}></div></Link>
                 <div className={classes.NavButtonsInactive}>Contact Us<div className={classes.bottomBar5}></div></div>
                 {rightElement}
             </nav>

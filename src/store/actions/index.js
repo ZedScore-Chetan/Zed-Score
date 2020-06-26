@@ -1,5 +1,9 @@
 export {
     showNavSideDrawer,
     closeNavSideDrawer
-}
-    from './SideDrawer';
+} from './SideDrawer';
+
+export {
+    getBlogs,
+    getBlog,
+} from './blogs';
