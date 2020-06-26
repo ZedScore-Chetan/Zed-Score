@@ -10,17 +10,16 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import backgroundImage from '../../Assets/background.png';
 
 const Curriculum = (props) => {
-    console.log(props);
     return (
         <div style={{ backgroundImage: `url(${backgroundImage})` }} className={classes.wrapper}>
             <div className={classes.gridContainer}>
-                <div class={classes.courseInformationRegion}>
+                <div className={classes.courseInformationRegion}>
                     <CourseInformationForm courseInformation={props.curriculum.courseInformation} />
                 </div>
-                <div class={classes.academicInformationRegion}>
+                <div className={classes.academicInformationRegion}>
                     <AcademicInformationForm academicInformation={props.curriculum.academicInformation} />
                 </div>
-                <div class={classes.otherInformationRegion}>
+                <div className={classes.otherInformationRegion}>
                     <div>
                         <div>% of Course Covered</div>
                         <CircularProgressbar value={props.curriculum.courseCoveredPercentage} text={`${props.curriculum.courseCoveredPercentage}%`} />

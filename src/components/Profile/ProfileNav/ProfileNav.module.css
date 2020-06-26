@@ -1,7 +1,7 @@
 .navWrapper{
     display:flex;
     flex-direction:column;
-    height:100vh;
+    height:90vh;
     width:30vw;
     background-color: #E6E6E6;
     justify-content: center;
@@ -23,10 +23,12 @@
     margin-bottom: 20px;
     color:white;
     box-shadow: 5px 4px 10px -3px rgba(130,130,130,1);
+    transition: all 0.1s ease-in;
+    cursor:pointer;
 }
 
 .selected{
-    width:calc(100% + 60px);
-    padding-right: 150px;
+    margin-right: -60px !important;
+    padding-right: 150px !important;
     font-weight: 900;
 }

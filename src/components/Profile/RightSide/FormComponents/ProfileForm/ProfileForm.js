@@ -11,7 +11,7 @@ class ProfileForm extends Component {
                 <div className={classes.sectionHeading}>Profile</div>
                 <FormElement field="First Name" inputInitialData={this.props.profile.firstName} />
                 <FormElement field="Last Name" inputInitialData={this.props.profile.lastName} />
-                <FormElement field="Plan" inputInitialData={this.props.profile.plan} />
+                <FormElement field="Plan" inputInitialData={this.props.profile.plan} readOnly={true} />
             </div>
         );
     }

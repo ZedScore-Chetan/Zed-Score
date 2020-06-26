@@ -8,6 +8,7 @@ import PersonalInformation from './RightSide/PersonalInformation/PersonalInforma
 import Curriculum from './RightSide/Curriculum/Curriculum';
 import Payment from './RightSide/Payment/Payment';
 import Communications from './RightSide/Communications/Communications';
+import NavBar from '../NavBar/NavBar';
 
 import profilePic from './Assets/profile.jpeg';
 
@@ -113,6 +114,7 @@ class Profile extends Component {
 
         return (
             <div className={classes.wrapper}>
+                <NavBar />
                 {/* <ProfileNav active={active} /> */}
                 <ProfileNav />
                 {/* {RightComponent} */}

@@ -35,10 +35,10 @@ const ProfileNav = (props) => {
             {/* <p>This is ProfileNav</p>
             <p>{props.active}</p> */}
             <div className={classes.buttonWrapper}>
-                <div onClick={() => navigate(0)} className={activeLink === 0 ? classes.selected : null}>Personal Information</div>
+                <div onClick={() => navigate(0)} className={activeLink === 0 ? classes.selected : null}>Personal Info</div>
                 <div onClick={() => navigate(1)} className={activeLink === 1 ? classes.selected : null}>Curriculum</div>
                 <div onClick={() => navigate(2)} className={activeLink === 2 ? classes.selected : null}>Payment</div>
-                <div onClick={() => navigate(3)} className={activeLink === 3 ? classes.selected : null}>Communications</div>
+                <div onClick={() => navigate(3)} className={activeLink === 3 ? classes.selected : null}>Communication</div>
             </div>
         </div>
     );
