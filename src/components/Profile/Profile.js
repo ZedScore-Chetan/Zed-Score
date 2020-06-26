@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
 
 import classes from './Profile.module.css';
 
@@ -53,7 +54,7 @@ class Profile extends Component {
         },
         communications: [
             {
-                announcementID : 0,
+                announcementID: 0,
                 issuer: 'Instructor1',
                 pic: profilePic,
                 time: new Date().toISOString().slice(0, 10),
@@ -61,7 +62,7 @@ class Profile extends Component {
                 message: "Hello Students! Due to unavoidable circumstances. Today's class has to be shifted to 7pm tomorrow\nMulti Line messages are also allowed.",
             },
             {
-                announcementID : 1,
+                announcementID: 1,
                 issuer: 'Instructor2',
                 pic: profilePic,
                 time: new Date().toISOString().slice(0, 10),
@@ -69,7 +70,7 @@ class Profile extends Component {
                 message: "Hello Students! Due to unavoidable circumstances. Today's class has to be shifted to 7pm tomorrow\nAuto Resize are also allowed.",
             },
             {
-                announcementID : 2,
+                announcementID: 2,
                 issuer: 'Instructor3',
                 pic: profilePic,
                 time: new Date().toISOString().slice(0, 10),
@@ -77,7 +78,7 @@ class Profile extends Component {
                 message: "Hello Students! Due to unavoidable circumstances. Today's class has to be shifted to 7pm tomorrow\nMulti Line messages are also allowed.",
             },
             {
-                announcementID : 3,
+                announcementID: 3,
                 issuer: 'Instructor4',
                 pic: profilePic,
                 time: new Date().toISOString().slice(0, 10),
@@ -88,35 +89,42 @@ class Profile extends Component {
     };
 
 
-render() {
-    var active = 3;
-    var RightComponent = null;
-    switch (active) {
-        case 0:
-            RightComponent = <PersonalInformation personalInformation={this.profileData.personalInformation} />;
-            break;
-        case 1:
-            RightComponent = <Curriculum curriculum={this.profileData.curriculum} />;
-            break;
-        case 2:
-            RightComponent = <Payment courseInformation={this.profileData.curriculum.courseInformation} paymentInformation={this.profileData.paymentInformation} />;
-            break;
-        case 3:
-            RightComponent = <Communications courseInformation={this.profileData.curriculum.courseInformation} paymentInformation={this.profileData.paymentInformation} communications={this.profileData.communications} />;
-            break;
-        default:
-            // Error
-            alert('Looks like there is some problem with the system');
+    render() {
+        // var active = 3;
+        // var RightComponent = null;
+        // switch (active) {
+        //     case 0:
+        //         RightComponent = <PersonalInformation personalInformation={this.profileData.personalInformation} />;
+        //         break;
+        //     case 1:
+        //         RightComponent = <Curriculum curriculum={this.profileData.curriculum} />;
+        //         break;
+        //     case 2:
+        //         RightComponent = <Payment courseInformation={this.profileData.curriculum.courseInformation} paymentInformation={this.profileData.paymentInformation} />;
+        //         break;
+        //     case 3:
+        //         RightComponent = <Communications courseInformation={this.profileData.curriculum.courseInformation} paymentInformation={this.profileData.paymentInformation} communications={this.profileData.communications} />;
+        //         break;
+        //     default:
+        //         // Error
+        //         alert('Looks like there is some problem with the system');
+        // }
+
+
+        return (
+            <div className={classes.wrapper}>
+                {/* <ProfileNav active={active} /> */}
+                <ProfileNav />
+                {/* {RightComponent} */}
+                <Switch>
+                    <Route path="/profile/info" render={() => <PersonalInformation personalInformation={this.profileData.personalInformation} />} />
+                    <Route path="/profile/curriculum" render={() => <Curriculum curriculum={this.profileData.curriculum} />} />
+                    <Route path="/profile/payment" render={() => <Payment courseInformation={this.profileData.curriculum.courseInformation} paymentInformation={this.profileData.paymentInformation} />} />
+                    <Route path="/profile/comm" render={() => <Communications courseInformation={this.profileData.curriculum.courseInformation} paymentInformation={this.profileData.paymentInformation} communications={this.profileData.communications} />} />
+                </Switch>
+            </div>
+        );
     }
-
-
-    return (
-        <div className={classes.wrapper}>
-            <ProfileNav active={active} />
-            {RightComponent}
-        </div>
-    );
-}
 }
 
 export default Profile;

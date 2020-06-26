@@ -1,19 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classes from './ProfileNav.module.css';
+import { withRouter } from 'react-router-dom';
 
 const ProfileNav = (props) => {
+
+    const [activeLink, setActiveLink] = useState(0);
+
+    const navigate = (linkNo) => {
+        switch (linkNo) {
+            case 0:
+                setActiveLink(0);
+                props.history.push('/profile/info');
+                break;
+            case 1:
+                setActiveLink(1);
+                props.history.push('/profile/curriculum');
+                break;
+            case 2:
+                setActiveLink(2);
+                props.history.push('/profile/payment');
+                break;
+            case 3:
+                setActiveLink(3);
+                props.history.push('/profile/comm');
+                break;
+            default:
+                setActiveLink(0);
+                props.history.push('/profile/info');
+        }
+    };
+
     return (
         <div className={classes.navWrapper}>
             {/* <p>This is ProfileNav</p>
             <p>{props.active}</p> */}
             <div className={classes.buttonWrapper}>
-                <div className={props.active === 0 ? classes.selected : null}>Personal Information</div>
-                <div className={props.active === 1 ? classes.selected : null}>Curriculum</div>
-                <div className={props.active === 2 ? classes.selected : null}>Payment</div>
-                <div className={props.active === 3 ? classes.selected : null}>Communications</div>
+                <div onClick={() => navigate(0)} className={activeLink === 0 ? classes.selected : null}>Personal Information</div>
+                <div onClick={() => navigate(1)} className={activeLink === 1 ? classes.selected : null}>Curriculum</div>
+                <div onClick={() => navigate(2)} className={activeLink === 2 ? classes.selected : null}>Payment</div>
+                <div onClick={() => navigate(3)} className={activeLink === 3 ? classes.selected : null}>Communications</div>
             </div>
         </div>
     );
 }
 
-export default ProfileNav;
+export default withRouter(ProfileNav);

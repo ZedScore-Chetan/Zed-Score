@@ -10,6 +10,10 @@ const NavBar = props => {
 
     // const [activeLink, setActiveLink] = useState(null);
 
+    const showUserProfileHandler = () => {
+        props.history.push("/profile/info")
+    };
+
     var rightElement = null;
     if (props.isLoggedIn === false) {
         rightElement = <Link to="/login" className={classes.LoginButtonContainer}>
@@ -19,7 +23,7 @@ const NavBar = props => {
     else {
         rightElement = <div className={classes.IconsContainer}>
             <img src={Bell} className={classes.Bell} alt="bell"></img>
-            <img src={userIcon} className={classes.User} alt="user"></img>
+            <img src={userIcon} className={classes.User} alt="user" onClick={() => showUserProfileHandler()}></img>
         </div>
     }
 
