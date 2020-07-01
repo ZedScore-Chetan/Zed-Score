@@ -9,6 +9,7 @@ import classes from './LandingPage.module.css';
 import NavBar from '../NavBar/NavBar';
 // import ThirdContainer from './ThirdContainer/ThirdContainer';
 import BottomNav from '../BottomNav/BottomNav';
+import Spinner from '../Spinner/Spinner';
 
 const LandingPage = props => {
 
