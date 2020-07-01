@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 import classes from './NavBar.module.css';
 import Home from '../../assets/home.png';
@@ -70,5 +71,11 @@ const NavBar = props => {
     );
 }
 
+const mapStateToProps = state => {
+    return {
+        isLoggedIn: state.auth.isLoggedIn,
+    };
+};
 
-export default withRouter(NavBar);
+
+export default connect(mapStateToProps)(withRouter(NavBar));

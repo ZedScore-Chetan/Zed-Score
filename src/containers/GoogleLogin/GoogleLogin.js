@@ -11,10 +11,23 @@ const GoogleLoginButton = props => {
     const successHandler = response => {
         console.log(response)
         // props.postGoogleLoginHandler(response);
+        console.log(response.tokenId)
+        let obj = {
+            provider: 'google-oauth2',
+            access_token: response.accessToken.toString(),
+        }
+        console.log(obj);
+        fetch('https://clearqtest.herokuapp.com/oauth/login/', {
+            method: "POST",
+            headers: { 'content-type': 'application/json' },
+            body: obj
+        })
+            .then(res => console.log(res))
+            .catch(err => console.log(err));
     }
 
     const failHandler = response => {
-        console.log(response);
+        console.log(response.tokenId);
     }
 
     console.log(clientId);
