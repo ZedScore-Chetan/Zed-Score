@@ -16,16 +16,16 @@ const NavBar = props => {
     };
 
     var rightElement = null;
-    if (props.isLoggedIn === false) {
-        rightElement = <Link to="/login" className={classes.LoginButtonContainer}>
-            <div className={classes.LoginButton}>Login</div>
-        </Link>
-    }
-    else {
+    if (localStorage.getItem('token')) {
         rightElement = <div className={classes.IconsContainer}>
             <img src={Bell} className={classes.Bell} alt="bell"></img>
             <img src={userIcon} className={classes.User} alt="user" onClick={() => showUserProfileHandler()}></img>
         </div>
+    }
+    else {
+        rightElement = <Link to="/login" className={classes.LoginButtonContainer}>
+            <div className={classes.LoginButton}>Login</div>
+        </Link>
     }
 
     const homeClickedHandler = () => {
@@ -71,11 +71,11 @@ const NavBar = props => {
     );
 }
 
-const mapStateToProps = state => {
-    return {
-        isLoggedIn: state.auth.isLoggedIn,
-    };
-};
+// const mapStateToProps = state => {
+//     return {
+//         isLoggedIn: state.auth.isLoggedIn,
+//     };
+// };
 
 
-export default connect(mapStateToProps)(withRouter(NavBar));
+export default withRouter(NavBar);

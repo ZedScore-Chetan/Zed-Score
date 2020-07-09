@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 // import logo from './logo.svg';
 // import classes from './App.module.css';
@@ -16,7 +17,7 @@ import BlogContent from './components/BlogContent/BlogContent';
 // import TrainingCard from './components/TrainingCard/TrainingCard';
 // import NavBar from './components/NavBar/NavBar';
 
-function App() {
+const App = props => {
 
   useEffect(() => {
     // fetch('https://clearquantstest.herokuapp.com/api/v1/blog/', { method: "GET" })
@@ -24,6 +25,7 @@ function App() {
     // .then(data => console.log(data))
     // .then(res => console.log(res.json()))
     // .then(data => console.log(data))
+    console.log(props.token);
   })
 
   return (
@@ -42,4 +44,10 @@ function App() {
   );
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    token: state.auth.token,
+  };
+};
+
+export default connect(mapStateToProps)(App);

@@ -1,10 +1,21 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 
 import classes from './LoginPage.module.css';
 import LoginBg from '../../assets/loginBg.png';
 import GoogleLogin from '../GoogleLogin/GoogleLogin';
 
 const LoginPage = props => {
+
+    if (localStorage.getItem('token') && props.isUserDataFilled) {
+        console.log(localStorage.getItem('token'))
+        props.history.push('/');
+    }
+    else if(localStorage.getItem('token') && !props.isUserDataFilled){
+        props.history.push('/profile/info');
+    }
+
     return (
         <div className={classes.outerContainer}>
             <div className={classes.left}>
@@ -18,4 +29,10 @@ const LoginPage = props => {
     );
 };
 
-export default LoginPage;
+const mapStateToProps = state => {
+    return {
+        isUserDataFilled: state.auth.isUserDataFilled,
+    };
+};
+
+export default connect(mapStateToProps)(withRouter(LoginPage));

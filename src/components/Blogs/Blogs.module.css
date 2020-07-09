@@ -136,3 +136,11 @@
 .leftBulge {
   height: 100%;
 }
+
+.noBlogs{
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

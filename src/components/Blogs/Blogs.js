@@ -40,53 +40,58 @@ class Blogs extends Component {
                 display = <div>There seems to be an error! Please try again later ...</div>
             }
             else {
-                display = this.props.blogs.map((blog, index) => {
-                    if (index % 2 === 0) {
-                        return (
-                            <div key={blog.id} className={classes.blogLeftContainer}>
-                                <div className={classes.blog}>
-                                    <div className={classes.imgContainer}>
-                                        <img src={blog.picture1} alt="img" className={classes.img} />
-                                    </div>
-                                    <div className={classes.textContainer}>
-                                        <div className={classes.heading}>{blog.title}</div>
-                                        <div className={classes.text}>
-                                            {blog.content1}
+                if (this.props.blogs.length === 0) {
+                    display = <h1 className={classes.noBlogs}>There are no Blogs !!!</h1>
+                }
+                else {
+                    display = this.props.blogs.map((blog, index) => {
+                        if (index % 2 === 0) {
+                            return (
+                                <div key={blog.id} className={classes.blogLeftContainer}>
+                                    <div className={classes.blog}>
+                                        <div className={classes.imgContainer}>
+                                            <img src={blog.picture1} alt="img" className={classes.img} />
                                         </div>
-                                        <div onClick={() => this.blogClickedHandler(blog.id)} className={classes.readMoreBtn}>Read More</div>
-                                    </div>
-                                </div>
-                                <div className={classes.rightBulgeContainer}>
-                                    <img src={GreenBulge} alt="greenBulge" className={classes.rightBulge} />
-                                </div>
-                            </div>
-                        );
-                    }
-                    else {
-                        return (
-                            <div key={blog.id} className={classes.blogRightContainer}>
-                                <div className={classes.leftBulgeContainer}>
-                                    <img src={RedBulge} alt="redBulge" className={classes.leftBulge} />
-                                </div>
-                                <div className={classes.blog}>
-                                    <div className={classes.imgContainer}>
-                                        <img src={blog.picture1} alt="img" className={classes.img} />
-                                    </div>
-                                    <div className={classes.textContainer}>
-                                        <div className={classes.heading}>{blog.title}</div>
-                                        <div className={classes.text}>
-                                            {blog.content1}
+                                        <div className={classes.textContainer}>
+                                            <div className={classes.heading}>{blog.title}</div>
+                                            <div className={classes.text}>
+                                                {blog.content1}
+                                            </div>
+                                            <div onClick={() => this.blogClickedHandler(blog.id)} className={classes.readMoreBtn}>Read More</div>
                                         </div>
-                                        <div onClick={() => this.blogClickedHandler(blog.id)} className={classes.readMoreBtn}>Read More</div>
+                                    </div>
+                                    <div className={classes.rightBulgeContainer}>
+                                        <img src={GreenBulge} alt="greenBulge" className={classes.rightBulge} />
                                     </div>
                                 </div>
-                                {/* <div className={classes.rightBulgeContainer}>
-                                    <img src={GreenBulge} alt="greenBulge" className={classes.rightBulge} />
-                                </div> */}
-                            </div>
-                        );
-                    }
-                })
+                            );
+                        }
+                        else {
+                            return (
+                                <div key={blog.id} className={classes.blogRightContainer}>
+                                    <div className={classes.leftBulgeContainer}>
+                                        <img src={RedBulge} alt="redBulge" className={classes.leftBulge} />
+                                    </div>
+                                    <div className={classes.blog}>
+                                        <div className={classes.imgContainer}>
+                                            <img src={blog.picture1} alt="img" className={classes.img} />
+                                        </div>
+                                        <div className={classes.textContainer}>
+                                            <div className={classes.heading}>{blog.title}</div>
+                                            <div className={classes.text}>
+                                                {blog.content1}
+                                            </div>
+                                            <div onClick={() => this.blogClickedHandler(blog.id)} className={classes.readMoreBtn}>Read More</div>
+                                        </div>
+                                    </div>
+                                    {/* <div className={classes.rightBulgeContainer}>
+                                        <img src={GreenBulge} alt="greenBulge" className={classes.rightBulge} />
+                                    </div> */}
+                                </div>
+                            );
+                        }
+                    })
+                }
             }
         }
 

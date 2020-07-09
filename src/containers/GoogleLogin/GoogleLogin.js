@@ -3,33 +3,30 @@ import GoogleLogin from 'react-google-login';
 import { connect } from 'react-redux';
 
 import classes from './GoogleLogin.module.css';
+import * as actions from '../../store/actions/index';
 
 const GoogleLoginButton = props => {
 
-    const clientId = process.env.REACT_APP_GOOGLE_CLIENT_ID;
-
+    const clientId = "977428861370-m6st2jfuc1e6h5hu90nvgjk6oi0hk2a8.apps.googleusercontent.com";
     const successHandler = response => {
         console.log(response)
         // props.postGoogleLoginHandler(response);
         console.log(response.tokenId)
         let obj = {
-            provider: 'google-oauth2',
-            access_token: response.accessToken.toString(),
+            grant_type: 'convert_token',
+            client_id: 'Pn2vUAMKxdUkiT3pD22BhaQj9vOY6ZP2WZPejT1c',
+            client_secret: 'hOV5ExTK4YkfkIMUQ6dZM10NFw8cNQ5KbFw1IEoqTYzoqFL7AxbSiyC0I8WYIjOCkZ2e71k5kkwOeDCLFg4Ivx2yR7hLqjnCjM7OwLNE4HAcQSqdslExR1uTVg4CG6ZI',
+            backend: 'google-oauth2',
+            token: response.accessToken,
         }
         console.log(obj);
-        fetch('https://clearqtest.herokuapp.com/oauth/login/', {
-            method: "POST",
-            headers: { 'content-type': 'application/json' },
-            body: obj
-        })
-            .then(res => console.log(res))
-            .catch(err => console.log(err));
+        props.GoogleLogin(obj);
     }
 
     const failHandler = response => {
         console.log(response.tokenId);
     }
-    
+
 
     console.log(clientId);
 
@@ -53,4 +50,10 @@ const GoogleLoginButton = props => {
 //     };
 // };
 
-export default GoogleLoginButton;
+const mapDispatchToProps = dispatch => {
+    return {
+        GoogleLogin: (data) => dispatch(actions.GoogleLogin(data)),
+    };
+};
+
+export default connect(null, mapDispatchToProps)(GoogleLoginButton);

@@ -7,3 +7,5 @@ export const FETCH_BLOGS_FAILED = 'FETCH_BLOGS_FAILED';
 export const FETCH_BLOG_START = 'FETCH_BLOG_START';
 export const SET_BLOG = 'SET_BLOG';
 export const FETCH_BLOG_FAILED = 'FETCH_BLOG_FAILED';
+
+export const SET_ACCESS_TOKEN = 'SET_ACCESS_TOKEN';

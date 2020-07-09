@@ -7,3 +7,8 @@ export {
     getBlogs,
     getBlog,
 } from './blogs';
+
+
+export {
+    GoogleLogin,
+} from './auth';
