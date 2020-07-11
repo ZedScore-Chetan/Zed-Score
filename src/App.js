@@ -19,14 +19,24 @@ import BlogContent from './components/BlogContent/BlogContent';
 
 const App = props => {
 
-  useEffect(() => {
-    // fetch('https://clearquantstest.herokuapp.com/api/v1/blog/', { method: "GET" })
-    // .then(res => res.json())
-    // .then(data => console.log(data))
-    // .then(res => console.log(res.json()))
-    // .then(data => console.log(data))
-    console.log(props.token);
-  })
+  // useEffect(() => {
+  //   let obj = {
+  //     oid: "12345",
+  //     amount: "200",
+  //     mobile: "9873590730",
+  //     email: "chiragwadhwa.55555@gmail.com",
+  //     callback_url: "http://localhost:3000/",
+  //     payment_mode_only: "NO",
+  //     auth_mode: "3D",
+  //     payment_type_id: "CC",
+  //   }
+  //   fetch('https://clearquantstest.herokuapp.com/paytm-pay-now/', {
+  //     method: "POST",
+  //     body: JSON.stringify(obj),
+  //   })
+  //     .then(res => console.log(res))
+  //     .catch(err => console.log(err));
+  // })
 
   return (
 

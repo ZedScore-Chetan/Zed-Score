@@ -6,6 +6,8 @@ export {
 export {
     getBlogs,
     getBlog,
+    getFinancialBlogs,
+    getFinancialBlog,
 } from './blogs';
 
 

@@ -84,9 +84,6 @@ class Blogs extends Component {
                                             <div onClick={() => this.blogClickedHandler(blog.id)} className={classes.readMoreBtn}>Read More</div>
                                         </div>
                                     </div>
-                                    {/* <div className={classes.rightBulgeContainer}>
-                                        <img src={GreenBulge} alt="greenBulge" className={classes.rightBulge} />
-                                    </div> */}
                                 </div>
                             );
                         }
@@ -107,38 +104,6 @@ class Blogs extends Component {
                     </div>
                     <div className={classes.blogsConainer}>
                         {display}
-                        {/* <div className={classes.blogLeftContainer}>
-                            <div className={classes.blog}>
-                                <div className={classes.imgContainer}>
-                                    <img src={Search} alt="img" className={classes.img} />
-                                </div>
-                                <div className={classes.textContainer}>
-                                    <div className={classes.heading}>BLOG 1</div>
-                                    <div className={classes.text}>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                                </div>
-                                    <div className={classes.readMoreBtn}>Read More</div>
-                                </div>
-                            </div>
-                            <div className={classes.rightBulgeContainer}>
-                                <img src={GreenBulge} alt="greenBulge" className={classes.rightBulge} />
-                            </div>
-                        </div>
-                        <div className={classes.blogRightContainer}>
-                            <div className={classes.leftBulgeContainer}>
-                                <img src={RedBulge} alt="redBulge" className={classes.leftBulge} />
-                            </div>
-                            <div className={classes.blog}>
-                                <div className={classes.imgContainer}>
-                                    <img src={Search} alt="img" className={classes.img} />
-                                </div>
-                                <div className={classes.textContainer}>
-                                    <div className={classes.text}>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                                </div>
-                                </div>
-                            </div>
-                        </div> */}
                     </div>
                 </div>
             </Fragment>
