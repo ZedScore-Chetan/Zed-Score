@@ -1,0 +1,114 @@
+.container {
+    /* background-color: pink; */
+    width: 100vw;
+    min-height: 84vh;
+    height: auto;
+    margin-top: 16vh;
+    /* margin-left: 15vw; */
+    padding: 100px 40px 100px 40px;
+    display: grid;
+    justify-content: center;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 100px 150px;
+    grid-template-areas: "selectTopicHeading selectTopicContent" "practiceTestHeading practiceTestContent" "conceptsHeading conceptsContent" "classVideosHeading classVideosContent";
+}
+
+.selectTopicHeading {
+    grid-area: selectTopicHeading;
+    font-weight: 900;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.practiceTestHeading {
+    grid-area: practiceTestHeading;
+    font-weight: 900;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.conceptsHeading {
+    grid-area: conceptsHeading;
+    font-weight: 900;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.classVideosHeading {
+    grid-area: classVideosHeading;
+    font-weight: 900;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.practiceTestContent {
+    grid-area: practiceTestContent;
+}
+
+.selectTopicContent {
+    grid-area: selectTopicContent;
+    width: calc(10vw + 10vh);
+}
+
+.conceptsContent {
+    grid-area: conceptsContent;
+}
+
+.classVideosContent {
+    grid-area: classVideosContent;
+}
+
+.tableContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.columnContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 20px;
+    min-width: 30px;
+    /* background-color: lightgrey; */
+}
+
+.columnHeading {
+    background-color: black;
+    color: white;
+    padding: 5px 60px 5px 60px;
+}
+
+.gridBox {
+    width: 100%;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:0.85em;
+    border: 1px solid black;
+    color:black;
+    padding:30px 0px 30px 0px;
+}
+
+.gridBox:nth-child(even){
+    background-color: #00000029;
+}
+
+.gridBox:nth-child(odd){
+    background-color:#8080801A;
+}
+
+.singleRowContent{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
