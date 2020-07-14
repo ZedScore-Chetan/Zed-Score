@@ -12,6 +12,7 @@ import DigitalMarketing from './components/DigitalMarketing/DigitalMarketing';
 import Profile from './components/Profile/Profile';
 import Blogs from './components/Blogs/Blogs';
 import BlogContent from './components/BlogContent/BlogContent';
+import DemoBooking from './components/DemoBooking/DemoBooking';
 // import Layout from './hoc/Layout';
 // import InnerNavBar from './components/InnerNavBar/InnerNavBar';
 // import TrainingCard from './components/TrainingCard/TrainingCard';
@@ -49,6 +50,7 @@ const App = props => {
       <Route path="/marketing" render={() => <DigitalMarketing />} />
       <Route path="/blogs" exact render={() => <Blogs />} />
       <Route path="/blogs/content" render={() => <BlogContent />} />
+      <Route path="/demo" render={() => <DemoBooking />} />
     </Switch>
 
   );

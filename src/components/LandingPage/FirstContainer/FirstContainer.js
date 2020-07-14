@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, withRouter } from 'react-router-dom';
 import classes from './FirstContainer.module.css';
 
 import FirstImage from '../../../assets/FirstImg.png';
@@ -31,7 +32,7 @@ const FirstContainer = props => {
                 <div className={classes.FirstText3}>Start Prepairing today!</div>
             </div>
             <div className={classes.DemoButton}>
-                <div className={classes.DemoText}>Book a Free Demo</div>
+                <Link to="/demo" className={classes.DemoText} >Book a Free Demo</Link>
             </div>
         </div>
     );
