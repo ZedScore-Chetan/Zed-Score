@@ -1,0 +1,71 @@
+.wrapper {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70vw;
+    height: 90vh;
+    background-color: #dfdfdf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridContainer {
+    
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 70px 50px;
+    grid-template-areas: "courseSelectorHeading courseSelector" "dateTimePickerHeading dateTimePicker" "linkHeading linkInput" "submitButtonContainer submitButtonContainer";
+}
+
+.gridContainer>div{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.courseSelectorHeading {
+    grid-area: courseSelectorHeading;
+}
+
+.dateTimePickerHeading {
+    grid-area: dateTimePickerHeading;
+}
+
+.linkHeading {
+    grid-area: linkHeading;
+}
+
+.submitButtonContainer {
+    grid-area: submitButtonContainer;
+    text-align: center;
+}
+
+.scheduleButton{
+    padding:10px 20px;
+    background-color: blue;
+    color:white;
+    width: max-content;
+    margin:auto;
+    border-radius: 4px;
+}
+
+.courseSelector {
+    grid-area: courseSelector;
+    display:block !important;
+}
+
+.dateTimePicker {
+    grid-area: dateTimePicker;
+}
+
+.linkInput {
+    grid-area: linkInput;
+}
+
+.linkInput > input{
+    width:100%;
+    height:100%;
+    padding-left: 10px;
+}
