@@ -25,13 +25,18 @@ const App = props => {
   let [data, setData] = useState(null);
 
   useEffect(() => {
+  })
+
+  const pay = (e) => {
+    // e.preventDefault();
+    console.log("hello")
     let obj = {
-      oid: "6856453",
+      oid: "86756454990",
       amount: "200",
       mobile: "9873590730",
       email: "chiragwadhwa.55555@gmail.com",
-      // callback_url: "https://clearquantstest.herokuapp.com/paytm/response/",
-      callback_url: "http://localhost:3000/paytmData",
+      callback_url: "https://clearquantstest.herokuapp.com/paytm/response/",
+      // callback_url: "http://localhost:3000/",
       payment_mode_only: "No",
       auth_mode: "3D",
       payment_type_id: "CC",
@@ -61,27 +66,33 @@ const App = props => {
           .then(res => {
             console.log(res)
             setData(res)
+            return res
+          })
+          .then(res => {
+            props.history.push('/paytmData')
           })
           .catch(err => console.log(err));
       }
     }
-  })
+  };
 
   return (
-
-    <Switch>
-      <Route path="/" exact render={() => <LandingPage />} />
-      <Route path="/training" exact render={() => <Training />} />
-      <Route path="/login" exact render={() => <LoginPage />} />
-      <Route path="/library" render={() => <Library />} />
-      <Route path="/profile" render={() => <Profile />} />
-      <Route path="/teacherProfile" render={() => <TeacherProfile />} />
-      <Route path="/marketing" render={() => <DigitalMarketing />} />
-      <Route path="/blogs" exact render={() => <Blogs />} />
-      <Route path="/blogs/content" render={() => <BlogContent />} />
-      <Route path="/demo" render={() => <DemoBooking />} />
-      <Route path="/paytmData" render={() => <PaytmForm data={data} />} />
-    </Switch>
+    <div>
+      <button onClick={(event) => pay(event)} style={{ height: '20vh', cursor: 'pointer', marginTop: '20vh', backgroundColor: 'red' }}>Hello</button>
+      <Switch>
+        <Route path="/" exact render={() => <LandingPage />} />
+        <Route path="/training" exact render={() => <Training />} />
+        <Route path="/login" exact render={() => <LoginPage />} />
+        <Route path="/library" render={() => <Library />} />
+        <Route path="/profile" render={() => <Profile />} />
+        <Route path="/teacherProfile" render={() => <TeacherProfile />} />
+        <Route path="/marketing" render={() => <DigitalMarketing />} />
+        <Route path="/blogs" exact render={() => <Blogs />} />
+        <Route path="/blogs/content" render={() => <BlogContent />} />
+        <Route path="/demo" render={() => <DemoBooking />} />
+        <Route path="/paytmData" render={() => <PaytmForm data={data} />} />
+      </Switch>
+    </div>
 
   );
 }
