@@ -7,14 +7,17 @@ const initialState = {
 }
 
 const reducer = (state = initialState, action) => {
-    switch(action.type) {
+    switch (action.type) {
         case actionTypes.SET_ACCESS_TOKEN:
             localStorage.setItem('token', action.token);
-            return {
-                ...state,
-                isLoggedIn: true,
-                token: action.token,
-            };
+            console.log(action.token)
+            if (action.token) {
+                return {
+                    ...state,
+                    isLoggedIn: true,
+                    token: action.token,
+                };
+            }
         default: return state;
     }
 }

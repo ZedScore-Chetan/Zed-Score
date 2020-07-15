@@ -14,8 +14,8 @@ const GoogleLoginButton = props => {
         console.log(response.tokenId)
         let obj = {
             grant_type: 'convert_token',
-            client_id: 'Pn2vUAMKxdUkiT3pD22BhaQj9vOY6ZP2WZPejT1c',
-            client_secret: 'hOV5ExTK4YkfkIMUQ6dZM10NFw8cNQ5KbFw1IEoqTYzoqFL7AxbSiyC0I8WYIjOCkZ2e71k5kkwOeDCLFg4Ivx2yR7hLqjnCjM7OwLNE4HAcQSqdslExR1uTVg4CG6ZI',
+            client_id: '7ccCC33quZkSYGuWmqZoUvkrYKDoY4gGBtQNhktW',
+            // client_secret: 'hOV5ExTK4YkfkIMUQ6dZM10NFw8cNQ5KbFw1IEoqTYzoqFL7AxbSiyC0I8WYIjOCkZ2e71k5kkwOeDCLFg4Ivx2yR7hLqjnCjM7OwLNE4HAcQSqdslExR1uTVg4CG6ZI',
             backend: 'google-oauth2',
             token: response.accessToken,
         }

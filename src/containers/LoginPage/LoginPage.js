@@ -13,6 +13,7 @@ const LoginPage = props => {
         props.history.push('/');
     }
     else if(localStorage.getItem('token') && !props.isUserDataFilled){
+        console.log(localStorage.getItem('token'))
         props.history.push('/profile/info');
     }
 

@@ -19,24 +19,36 @@ import BlogContent from './components/BlogContent/BlogContent';
 
 const App = props => {
 
-  // useEffect(() => {
-  //   let obj = {
-  //     oid: "12345",
-  //     amount: "200",
-  //     mobile: "9873590730",
-  //     email: "chiragwadhwa.55555@gmail.com",
-  //     callback_url: "http://localhost:3000/",
-  //     payment_mode_only: "NO",
-  //     auth_mode: "3D",
-  //     payment_type_id: "CC",
-  //   }
-  //   fetch('https://clearquantstest.herokuapp.com/paytm-pay-now/', {
-  //     method: "POST",
-  //     body: JSON.stringify(obj),
-  //   })
-  //     .then(res => console.log(res))
-  //     .catch(err => console.log(err));
-  // })
+  useEffect(() => {
+    let obj = {
+      oid: "000654",
+      amount: "200",
+      mobile: "9873590730",
+      email: "chiragwadhwa.55555@gmail.com",
+      callback_url: "https://clearquantstest.herokuapp.com/paytm/response/",
+      payment_mode_only: "No",
+      auth_mode: "3D",
+      payment_type_id: "CC",
+    }
+    if (localStorage.getItem('token')) {
+      console.log(localStorage.getItem('token'))
+      fetch('https://clearquantstest.herokuapp.com/paytm/request/', {
+        method: "POST",
+        body: JSON.stringify(obj),
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer ' + localStorage.getItem('token')
+        },
+        credentials: "include",
+      })
+        .then(res => {
+          console.log(res);
+          return res.body
+        })
+        .then(body => console.log(body))
+        .catch(err => console.log(err));
+    }
+  })
 
   return (
 
