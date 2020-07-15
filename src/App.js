@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Route, Switch, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 // import logo from './logo.svg';
@@ -14,6 +14,7 @@ import Blogs from './components/Blogs/Blogs';
 import BlogContent from './components/BlogContent/BlogContent';
 import TeacherProfile from './components/TeacherProfile/TeacherProfile';
 import DemoBooking from './components/DemoBooking/DemoBooking';
+import PaytmForm from './components/PaytmForm/PaytmForm';
 // import Layout from './hoc/Layout';
 // import InnerNavBar from './components/InnerNavBar/InnerNavBar';
 // import TrainingCard from './components/TrainingCard/TrainingCard';
@@ -21,34 +22,48 @@ import DemoBooking from './components/DemoBooking/DemoBooking';
 
 const App = props => {
 
+  let [data, setData] = useState(null);
+
   useEffect(() => {
     let obj = {
-      oid: "000654",
+      oid: "6856453",
       amount: "200",
       mobile: "9873590730",
       email: "chiragwadhwa.55555@gmail.com",
-      callback_url: "https://clearquantstest.herokuapp.com/paytm/response/",
+      // callback_url: "https://clearquantstest.herokuapp.com/paytm/response/",
+      callback_url: "http://localhost:3000/paytmData",
       payment_mode_only: "No",
       auth_mode: "3D",
       payment_type_id: "CC",
     }
     if (localStorage.getItem('token')) {
       console.log(localStorage.getItem('token'))
-      fetch('https://clearquantstest.herokuapp.com/paytm/request/', {
-        method: "POST",
-        body: JSON.stringify(obj),
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': 'Bearer ' + localStorage.getItem('token')
-        },
-        credentials: "include",
-      })
-        .then(res => {
-          console.log(res);
-          return res.body
+      if (!data) {
+        fetch('https://clearquantstest.herokuapp.com/paytm/request/', {
+          method: "POST",
+          body: JSON.stringify(obj),
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + localStorage.getItem('token')
+          },
+          credentials: "include",
         })
-        .then(body => console.log(body))
-        .catch(err => console.log(err));
+          .then(res => {
+            console.log(res);
+            return (res.body.getReader());
+          })
+          .then(body => body.read())
+          .then(res => {
+            console.log(res)
+            let str = new TextDecoder("utf-8").decode(res.value);
+            return JSON.parse(str);
+          })
+          .then(res => {
+            console.log(res)
+            setData(res)
+          })
+          .catch(err => console.log(err));
+      }
     }
   })
 
@@ -65,6 +80,7 @@ const App = props => {
       <Route path="/blogs" exact render={() => <Blogs />} />
       <Route path="/blogs/content" render={() => <BlogContent />} />
       <Route path="/demo" render={() => <DemoBooking />} />
+      <Route path="/paytmData" render={() => <PaytmForm data={data} />} />
     </Switch>
 
   );
@@ -76,4 +92,4 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps)(withRouter(App));

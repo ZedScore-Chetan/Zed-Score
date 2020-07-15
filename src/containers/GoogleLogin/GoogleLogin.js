@@ -44,12 +44,6 @@ const GoogleLoginButton = props => {
     );
 };
 
-// const mapDispatchToProps = dispatch => {
-//     return {
-//         postGoogleLoginHandler: response => dispatch(actions.postGoogleLoginHandler(response)),
-//     };
-// };
-
 const mapDispatchToProps = dispatch => {
     return {
         GoogleLogin: (data) => dispatch(actions.GoogleLogin(data)),
