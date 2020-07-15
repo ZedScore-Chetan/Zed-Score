@@ -1,0 +1,26 @@
+.inputHeading{
+    font-size: 1.3em;
+    color:white;
+    margin-top:10%;
+    width:100%;
+}
+
+.inputField{
+    font-size:1.1em;
+    outline: none;
+    border:none;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+    color:#d8a4ebc2;
+    /* color:#3E98C7; */
+    /* color:#f8f8f8d7; */
+    margin-top: 4%;
+    font-weight: 300;
+    width:100%;
+}
+
+input:-webkit-autofill  {
+    -webkit-text-fill-color: #d8a4ebc2 !important;
+    -webkit-box-shadow: 0 0 0 1rem #25091cc2 inset !important;
+    background-clip: content-box !important;
+  }

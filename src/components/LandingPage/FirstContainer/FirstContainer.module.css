@@ -157,4 +157,23 @@
 .DemoText {
     font-family:poppins-semi-bold;
     font-size: 120%;
+    text-decoration: none;
+    color:inherit;
+}
+
+/* A link that has not been visited */
+.DemoText:link {
+    color: inherit;
+}
+/* A link that has been visited */
+.DemoText:visited {
+    color: inherit;
+}
+/* A link that is hovered on */
+.DemoText:hover {
+    color: inherit;
+}
+/* A link that is selected */
+.DemoText:active {
+    color: inherit;
 }

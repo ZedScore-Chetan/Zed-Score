@@ -12,6 +12,8 @@ import DigitalMarketing from './components/DigitalMarketing/DigitalMarketing';
 import Profile from './components/Profile/Profile';
 import Blogs from './components/Blogs/Blogs';
 import BlogContent from './components/BlogContent/BlogContent';
+import TeacherProfile from './components/TeacherProfile/TeacherProfile';
+import DemoBooking from './components/DemoBooking/DemoBooking';
 // import Layout from './hoc/Layout';
 // import InnerNavBar from './components/InnerNavBar/InnerNavBar';
 // import TrainingCard from './components/TrainingCard/TrainingCard';
@@ -58,9 +60,11 @@ const App = props => {
       <Route path="/login" exact render={() => <LoginPage />} />
       <Route path="/library" render={() => <Library />} />
       <Route path="/profile" render={() => <Profile />} />
+      <Route path="/teacherProfile" render={() => <TeacherProfile />} />
       <Route path="/marketing" render={() => <DigitalMarketing />} />
       <Route path="/blogs" exact render={() => <Blogs />} />
       <Route path="/blogs/content" render={() => <BlogContent />} />
+      <Route path="/demo" render={() => <DemoBooking />} />
     </Switch>
 
   );
